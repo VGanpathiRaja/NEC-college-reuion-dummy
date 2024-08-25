@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="en-US">
+<head>
+
+	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+	<meta name="author" content="SemiColonWeb" />
+
+	<!-- Stylesheets
+	============================================= -->
+	<link href="https://fonts.googleapis.com/css?family=PT+Serif:400,400i,700|Roboto:400,700&display=swap" rel="stylesheet" type="text/css" />
+	<link rel="stylesheet" href="css/bootstrap.css" type="text/css" />
+	<link rel="stylesheet" href="style3.css" type="text/css" />
+	<link rel="stylesheet" href="css/dark.css" type="text/css" />
+
+	<link rel="stylesheet" href="css/font-icons.css" type="text/css" />
+	<link rel="stylesheet" href="css/animate.css" type="text/css" />
+	<link rel="stylesheet" href="css/magnific-popup.css" type="text/css" />
+
+	<link rel="stylesheet" href="css/custom.css" type="text/css" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+
+	<!-- Conference Demo Specific Stylesheet -->
+	<link rel="stylesheet" href="css/colors.php?color=222" type="text/css" />
+	<link rel="stylesheet" href="demos/conference/conference.css" type="text/css" />
+	<!-- / -->
+
+	<!-- Document Title
+	============================================= -->
+	<title>Class of 1997 | Reunion 2022</title>
+
+</head>
+
+<body class="stretched body">
+
+	<!-- Document Wrapper
+	============================================= -->
+	<div id="wrapper" class="clearfix">
+
+		
+		<!-- Hero/Slider
+		============================================= -->
+		<section id="slider" class="slider-element min-vh-60 min-vh-md-100 include-header" style="background: black;">
+			<div class="slider-inner">
+
+				<div class="vertical-middle">
+					<div class="container dark py-5 py-md-0">
+						<div class="">
+							<div style="text-align: center;">
+								<h2 style="font-size: 30px; line-height: 35px; margin-bottom: 15px;margin-top:10px;    letter-spacing: 3px;">National Engineering College<br>  Class of 1997 <br> Silver Jubilee Reunion 2022</h2>
+								 <p>COME TOGETHER</p>
+								 <p>"a stroll down memory lane..."</p>
+								<p>The Reunion you’ve all been waiting for is finally happening.<br> Get ready for one unforgettable reunion!</p>
+								
+							</div>
+							<div style="text-align: center;">
+							
+									<p style="font-size: 15px; letter-spacing: 3px;">JULY 15, 2022</p>
+									<div >
+										<div style="text-align: center;">
+											<div class="timer" id="timer"></div>
+										</div>
+									</div> <br>
+									<span style="font-size: 18;">NEC College Campus</span > <br>
+									<span style="font-size: 18;">K.R.Nagar, Kovilpatti, Nallatinputhur, Tamil Nadu ,India -628503</span><br> <br> 	
+									<img src="demos/conference/images/venue/g9.jpg" style="text-align: center;" width="250px">
+									<p style="font-size: 15;">© 2022 proudly created for NEC'97 reunion <a href="#">info@nec97.in</a></p>
+							</div>
+						</div>
+					</div>
+				</div>
+
+			</div>
+		</section><!-- #Slider end -->
+</div>
+
+	<script src="js/jquery.js"></script>
+	<script src="js/plugins.min.js"></script>
+	<script src="https://maps.google.com/maps/api/js?key=YOUR-API-KEY"></script>
+
+	<!-- Footer Scripts
+	============================================= -->
+	<script src="js/functions.js"></script>
+
+	<script>
+
+		
+		function updateTimer() {
+    future = Date.parse("July 15, 2022 08:00:00");
+    now = new Date();
+    diff = future - now;
+
+    days = Math.floor(diff / (1000 * 60 * 60 * 24));
+    hours = Math.floor(diff / (1000 * 60 * 60));
+    mins = Math.floor(diff / (1000 * 60));
+    secs = Math.floor(diff / 1000);
+
+    d = days;
+    h = hours - days * 24;
+    m = mins - hours * 60;
+    s = secs - mins * 60;
+
+    document.getElementById("timer")
+        .innerHTML =
+        '<div>' + d + '<span>days</span></div>' +
+        '<div>' + h + '<span>hours</span></div>' +
+        '<div>' + m + '<span>minutes</span></div>' +
+        '<div>' + s + '<span>seconds</span></div>';
+}
+setInterval('updateTimer()', 1000);
+
+	</script>
+	
+
+</body>
+</html>
